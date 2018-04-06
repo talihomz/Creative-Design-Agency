@@ -31,7 +31,7 @@ Run the server with the following command:
 npm run dev
 ```
 
-Once everything is loaded, head over to your browser to [see a live copy of the portfolio](http://localhost:8000/).
+Once everything is loaded, head over to your browser to [see a live copy of the website](http://localhost:8000/).
 
 Build CSS with the following command: 
 ```
