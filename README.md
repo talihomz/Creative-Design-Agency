@@ -23,7 +23,7 @@ v9.8.0
 
 Run `npm install` to install all project dependencies.
 
-### Running your copy
+### Start Frontend development
 
 Run the server with the following command:
 
@@ -32,6 +32,11 @@ npm run dev
 ```
 
 Once its running, head over to your browser to [see your page/frontend app](http://localhost:3000/).
+
+From here on, all changes you make on your code will be visible on your page without the need of a full page reload.
+The project builds SCSS files and optimizes images on the go as well.
+
+We plan on adding JS builds as well in the near future.
 
 ### Additional commands
 
