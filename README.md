@@ -21,9 +21,9 @@ v9.8.0
 
 ### Installing
 
-This project is served and compiled with the help of `gulp`. 
+Run `npm install` to install all project dependencies.
 
-See the [Official documentation](https://gulpjs.com/) for more details.
+### Running your copy
 
 Run the server with the following command:
 
@@ -32,6 +32,8 @@ npm run dev
 ```
 
 Once its running, head over to your browser to [see your page/frontend app](http://localhost:3000/).
+
+### Additional commands
 
 Build CSS with the following command: 
 ```
