@@ -5,3 +5,15 @@ body, html {
   font-family: 'Roboto', sans-serif;
   overflow: auto;
 }
+
+nav {
+  background: transparent;
+  padding: 10px;
+  border: 1px solid black;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
