@@ -1,7 +1,7 @@
 {
-  "name": "frontend-starter",
+  "name": "creative-design-agency",
   "version": "1.0.0",
-  "description": "Frontend implementation starter kit for building HTML/CSS",
+  "description": "Creative Design Agency concept implementation",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/talihomz/Frontend-Starter.git"
+    "url": "git+https://github.com/talihomz/Creative-Design-Agency.git"
   },
   "keywords": [
     "HTML",
@@ -23,9 +23,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/talihomz/Frontend-Starter/issues"
+    "url": "https://github.com/talihomz/Creative-Design-Agency/issues"
   },
-  "homepage": "https://github.com/talihomz/Frontend-Starter#readme",
+  "homepage": "https://github.com/talihomz/Creative-Design-Agency#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
