@@ -2,7 +2,7 @@ const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const runSequence = require('run-sequence');
 const sass        = require('gulp-sass');
-const image  = require('gulp-image');
+const image       = require('gulp-imagemin');
 
 // Static Server + watching scss/html files
 gulp.task('serve', () => {
@@ -25,18 +25,18 @@ gulp.task('sass', () =>
 );
 
 // Compress images
-gulp.task('images', () =>
-  gulp.src('src/images/*')
+gulp.task('images', () => {
+  return gulp.src('src/images/*')
     .pipe(image())
     .pipe(gulp.dest('public/images'))
-);
+});
 
 // Browser Sync
-gulp.task('html', () =>
+gulp.task('html', () => {
   gulp.src('src/index.html')
     .pipe(gulp.dest('public'))
     .pipe(browserSync.stream())
-);
+});
 
 // Default task
 gulp.task('default', (callback) =>
