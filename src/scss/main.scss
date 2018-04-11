@@ -8,6 +8,13 @@ $orange: #ff7b38;
   box-sizing: border-box;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+   outline: none;
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -21,6 +28,11 @@ body, html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
 }
 
 .btn {
@@ -90,11 +102,6 @@ nav {
         color: #7b7b79;
       }
     }
-  }
-
-  .logo {
-    width: 64px;
-    height: 64px;
   }
 }
 
@@ -244,4 +251,70 @@ nav {
       width: 100%;
     }
   }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  border: 1px solid red;
+  margin: 64px 0;
+  padding: 64px 0;
+
+  h5 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: $grey;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-logo {
+    flex: 1;
+    display: flex;
+    text-align: left;
+
+    h5 {
+      color: #000;
+      margin: 16px 16px;
+      word-spacing: 1000px;
+    }
+  }
+
+  ul {
+    flex: 1;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .newsletter {
+    flex: 2;
+
+    form {
+      display: flex;
+      border-bottom: solid 2px $grey;
+      padding-bottom: 8px;
+      margin-top: 32px;
+      input {
+        border: none;
+        flex: 1;
+        font-size: 18px;
+      }
+
+      button {
+        border: none;
+      }
+    }
+  }
+}
+
+.copyright {
+  margin: 32px 0;
+  text-align: center;
+  color: $light-grey;
 }
