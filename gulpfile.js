@@ -13,6 +13,7 @@ gulp.task('serve', () => {
 
   gulp.watch("src/index.html", ['html']);
   gulp.watch("src/scss/**/*.scss", ['sass']);
+  gulp.watch("src/js/index.js", ['js']);
   gulp.watch("public/*.html").on('change', browserSync.reload);
 });
 
@@ -38,9 +39,16 @@ gulp.task('html', () => {
     .pipe(browserSync.stream())
 });
 
+// Javascript
+gulp.task('js', () => {
+  gulp.src('src/js/index.js')
+    .pipe(gulp.dest('public/js'))
+});
+
 // Default task
 gulp.task('default', (callback) =>
   runSequence('sass',
+              'js',
               ['images', 'html'],
               'serve',
               callback)
