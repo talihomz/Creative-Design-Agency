@@ -53,31 +53,6 @@ body, html {
   color: #fff;
 }
 
-/* refactor later */
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
 /* Navbar */
 nav {
   background: transparent;
@@ -360,3 +335,51 @@ footer {
   text-align: center;
   color: $light-grey;
 }
+
+/* Smaller screens */
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  nav {
+    ul {
+      li {
+        display: block;
+      }
+    }
+  }
+
+  #intro {
+    h4 {
+      text-align: center;
+      font-size: smaller;
+      letter-spacing: 6px;
+    }
+
+    h1 {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 48px;
+    }
+
+    button {
+      margin: 16px auto;
+      display: block;
+      padding: 12px 24px;
+      font-size: 14px;
+    }
+  }
+}
+
+/* @media screen and (min-width: 577px) and (max-width: 767px) {
+    body {
+        background: green;
+    }
+} */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  
+}
+
