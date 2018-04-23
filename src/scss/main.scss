@@ -432,43 +432,100 @@ footer {
     }
   }
 
-  // #about {
-  //
-  //
-  //
-  //       .artist {
-  //         flex: 1;
-  //
-  //         img {
-  //           width: 100%;
-  //           height: 85%;
-  //         }
-  //
-  //         h5 {
-  //           text-transform: uppercase;
-  //           letter-spacing: 6px;
-  //           font-size: 16px;
-  //           margin-bottom: 8px;
-  //         }
-  //
-  //         span {
-  //           color: $orange;
-  //           font-weight: bold;
-  //         }
-  //       }
-  //     }
-  //   }
-  //
-  //   .col-2 {
-  //     flex: 1;
-  //     margin-left: 30px;
-  //
-  //     img {
-  //       width: 100%;
-  //     }
-  //   }
-  // }
+  footer {
+    flex-direction: column;
+    padding-bottom: 0;
+
+    .newsletter {
+      order: 1;
+
+      h5 {
+        letter-spacing: 3px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      form {
+        border-bottom: none;
+        padding-bottom: 8px;
+        margin-top: 32px;
+        display: block;
+        input {
+          border-bottom: 2px solid $grey;
+          font-size: 16px;
+          display: block;
+          width: 100%;
+          padding: 5px;
+        }
+
+        button {
+          margin: 24px auto;
+          display: block;
+          border: none;
+          background: #fff;
+        }
+      }
+    }
+
+    .footer-logo {
+      order: 2;
+      margin: auto;
+
+      img {
+        margin: auto;
+      }
+
+      h5 {
+        color: #000;
+        margin: 16px 16px;
+        word-spacing: 1px;
+      }
+    }
+
+    ul {
+      order: 3;
+      margin-top: 36px;
+      text-align: center;
+      padding: 0;
+    }
+  }
 }
+
+// footer {
+//
+//
+//
+//   ul {
+//     flex: 1;
+//     list-style-type: none;
+//     margin: 0;
+//
+//     li {
+//       margin-bottom: 20px;
+//     }
+//   }
+//
+//   .newsletter {
+//     flex: 2;
+//
+//     form {
+//       display: flex;
+//       border-bottom: solid 2px $grey;
+//       padding-bottom: 8px;
+//       margin-top: 32px;
+//       input {
+//         border: none;
+//         flex: 1;
+//         font-size: 18px;
+//       }
+//
+//       button {
+//         border: none;
+//         background: #fff;
+//       }
+//     }
+//   }
+// }
 
 /* @media screen and (min-width: 577px) and (max-width: 767px) {
     body {
