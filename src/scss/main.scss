@@ -122,7 +122,7 @@ nav {
     color: $light-grey;
     letter-spacing: 6px;
   }
-  
+
   button {
     margin-top: 72px;
   }
@@ -207,7 +207,7 @@ nav {
       font-weight: bold;
       margin: 48px 0 16px;
     }
-  
+
     .subheader {
       text-transform: uppercase;
       letter-spacing: 6px;
@@ -371,6 +371,103 @@ footer {
       font-size: 14px;
     }
   }
+
+  #about {
+    .row {
+      display: block;
+
+      h2 {
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .subheader {
+        letter-spacing: 2px;
+        color: $grey;
+        font-size: 13px;
+        display: block;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin: 16px auto;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 16px;
+        font-weight: normal;
+      }
+
+      .artists {
+        #artist-1 {
+          margin-right: 4px;
+          height: 300px;
+        }
+        #artist-2 {
+          margin-left: 4px;
+          height: 300px;
+        }
+
+        .artist {
+          h5 {
+            letter-spacing: 2px;
+            font-size: 13px;
+            margin: 0 0 8px;
+            text-align: center;
+          }
+
+          span {
+            font-size: 13px;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+
+      .hide-on-mobile {
+        display: none;
+      }
+    }
+  }
+
+  // #about {
+  //
+  //
+  //
+  //       .artist {
+  //         flex: 1;
+  //
+  //         img {
+  //           width: 100%;
+  //           height: 85%;
+  //         }
+  //
+  //         h5 {
+  //           text-transform: uppercase;
+  //           letter-spacing: 6px;
+  //           font-size: 16px;
+  //           margin-bottom: 8px;
+  //         }
+  //
+  //         span {
+  //           color: $orange;
+  //           font-weight: bold;
+  //         }
+  //       }
+  //     }
+  //   }
+  //
+  //   .col-2 {
+  //     flex: 1;
+  //     margin-left: 30px;
+  //
+  //     img {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
 
 /* @media screen and (min-width: 577px) and (max-width: 767px) {
@@ -380,6 +477,5 @@ footer {
 } */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  
-}
 
+}
