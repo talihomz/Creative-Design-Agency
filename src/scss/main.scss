@@ -30,6 +30,10 @@ body, html {
   margin-left: auto;
 }
 
+#hide-on-desktop {
+  display: none;
+}
+
 .logo {
   width: 64px;
   height: 64px;
@@ -372,6 +376,66 @@ footer {
     }
   }
 
+  #concepts {
+    padding: 48px 0 0;
+
+    h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    span {
+      letter-spacing: 2px;
+      color: $grey;
+      font-size: 13px;
+      display: block;
+      text-align: center;
+    }
+
+    button {
+      margin: 16px auto;
+      display: block;
+      padding: 12px 24px;
+      font-size: 14px;
+    }
+
+    .images {
+      flex-direction: column;
+      height: auto;
+
+      .col-1,
+      .col-2,
+      .col-3 {
+        display: block;
+      }
+
+      #concept-1 {
+        height: 400px;
+        margin-bottom: 16px;
+      }
+
+      #concept-2 {
+        height: 350px;
+        margin-bottom: 16px;
+      }
+
+      #concept-3 {
+        height: 150px;
+        margin-bottom: 16px;
+      }
+
+      #concept-4 {
+        height: 400px;
+        margin-bottom: 16px;
+      }
+
+      #concept-5 {
+        height: 500px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
   #about {
     .row {
       display: block;
@@ -491,41 +555,6 @@ footer {
   }
 }
 
-// footer {
-//
-//
-//
-//   ul {
-//     flex: 1;
-//     list-style-type: none;
-//     margin: 0;
-//
-//     li {
-//       margin-bottom: 20px;
-//     }
-//   }
-//
-//   .newsletter {
-//     flex: 2;
-//
-//     form {
-//       display: flex;
-//       border-bottom: solid 2px $grey;
-//       padding-bottom: 8px;
-//       margin-top: 32px;
-//       input {
-//         border: none;
-//         flex: 1;
-//         font-size: 18px;
-//       }
-//
-//       button {
-//         border: none;
-//         background: #fff;
-//       }
-//     }
-//   }
-// }
 
 /* @media screen and (min-width: 577px) and (max-width: 767px) {
     body {
@@ -533,6 +562,31 @@ footer {
     }
 } */
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+// @media screen and (min-width: 577px) and (max-width: 992px) {
+//
+// }
 
+/* Bootstrap container sizes */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
