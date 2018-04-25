@@ -387,18 +387,23 @@ footer {
 
       li {
         display: block;
+        margin-bottom: 24px;
 
         .hamburger-icon {
           display: block;
+          float: right;
+          margin-bottom: 24px;
 
           span {
             display: block;
           }
         }
 
-        a {
-          display: none;
-        }
+      }
+
+      .navbar-link {
+        display: none;
+        text-align: right;
       }
     }
   }
