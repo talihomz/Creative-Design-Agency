@@ -72,6 +72,40 @@ nav {
       display: inline-block;
       margin-left: 16px;
 
+      /* Toggle button */
+     .hamburger-icon {
+       width: 40px;
+       height: 40px;
+       margin: 12px;
+       transform: rotate(0deg);
+       cursor: pointer;
+       display: none;
+     }
+
+     .hamburger-icon span {
+       display: block;
+       position: absolute;
+       height: 6px;
+       width: 100%;
+       background: #61dafb;
+       opacity: 1;
+       left: 0;
+       background: #000;
+       display: none;
+     }
+
+     .hamburger-icon span:nth-child(1) {
+       top: 0px;
+     }
+
+     .hamburger-icon span:nth-child(2) {
+       top: 12px;
+     }
+
+     .hamburger-icon span:nth-child(3) {
+       top: 24px;
+     }
+
       a {
         text-decoration: none;
         text-transform: uppercase;
@@ -349,8 +383,22 @@ footer {
 
   nav {
     ul {
+      margin: 0;
+
       li {
         display: block;
+
+        .hamburger-icon {
+          display: block;
+
+          span {
+            display: block;
+          }
+        }
+
+        a {
+          display: none;
+        }
       }
     }
   }
