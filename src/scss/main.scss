@@ -374,7 +374,54 @@ footer {
   color: $light-grey;
 }
 
-/* Smaller screens */
+/* Tablet screens */
+@media screen and (min-width: 577px) and (max-width: 1025px) {
+  #concepts {
+    height: 3400px;
+
+    .btn {
+      display: none;
+    }
+
+    .images {
+      margin-top: 48px;
+      display: block;
+
+      #concept-1 {
+        height: 700px;
+        margin-bottom: 16px;
+      }
+
+      #concept-2 {
+        height: 600px;
+        margin-bottom: 16px;
+      }
+
+      #concept-3 {
+        height: 280px;
+        margin-bottom: 16px;
+      }
+
+      #concept-4 {
+        height: 700px;
+        margin-bottom: 16px;
+      }
+
+      #concept-5 {
+        height: 700px;
+        margin-bottom: 16px;
+      }
+
+      .col-1,
+      .col-2,
+      .col-3 {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 576px) {
   .logo {
     width: 48px;
@@ -463,17 +510,17 @@ footer {
       }
 
       #concept-1 {
-        height: 400px;
+        height: 450px;
         margin-bottom: 16px;
       }
 
       #concept-2 {
-        height: 350px;
+        height: 400px;
         margin-bottom: 16px;
       }
 
       #concept-3 {
-        height: 150px;
+        height: 200px;
         margin-bottom: 16px;
       }
 
@@ -483,7 +530,7 @@ footer {
       }
 
       #concept-5 {
-        height: 500px;
+        height: 600px;
         margin-bottom: 16px;
       }
     }
@@ -607,17 +654,6 @@ footer {
     }
   }
 }
-
-
-/* @media screen and (min-width: 577px) and (max-width: 767px) {
-    body {
-        background: green;
-    }
-} */
-
-// @media screen and (min-width: 577px) and (max-width: 992px) {
-//
-// }
 
 /* Bootstrap container sizes */
 @media (min-width: 576px) {
