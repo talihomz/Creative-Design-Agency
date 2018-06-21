@@ -1,4 +1,4 @@
-# Sonos
+# Love Travel
 
 HTML/CSS implementation of the [Love Travel Concept on Dribble](https://dribbble.com/shots/3860181-Love-Travel-Website-Concept/attachments/875212).
 Includes the raw files used to build the site.
