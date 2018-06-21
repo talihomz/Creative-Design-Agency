@@ -35,5 +35,5 @@ deploy:
     - git init
     - git add .
     - git commit -m "Ready for deploy"
-    - heroku git:remote -a love-travel-concept
+    - heroku git:remote -a creative-design-agency-concept
     - git push heroku master -f
